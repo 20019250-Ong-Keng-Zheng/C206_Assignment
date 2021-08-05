@@ -1,18 +1,28 @@
 
-public class CurrencyList {
+public class Currency {
 	
 	private String Currency_ISO;
 	private String Currency_name;
 	private String Currency_country;
 	private Double buy_rate;
 	private Double sell_rate;
+	private Double Currency_holding;
 	
-	public CurrencyList(String Currency_ISO, String Currency_name, String Currency_country, Double buy_rate, Double sell_rate) {
+	public Currency(String Currency_ISO, String Currency_name, String Currency_country, Double buy_rate, Double sell_rate) {
 		this.Currency_ISO = Currency_ISO;
 		this.Currency_name = Currency_name;
 		this.Currency_country = Currency_country;
 		this.buy_rate = buy_rate;
 		this.sell_rate = sell_rate;
+	}
+	
+	public Currency(String Currency_ISO, String Currency_name, String Currency_country, Double buy_rate, Double sell_rate, Double Currency_holding) {
+		this.Currency_ISO = Currency_ISO;
+		this.Currency_name = Currency_name;
+		this.Currency_country = Currency_country;
+		this.buy_rate = buy_rate;
+		this.sell_rate = sell_rate;
+		this.Currency_holding = Currency_holding;
 	}
 	
 	public String getISO() {
@@ -41,6 +51,14 @@ public class CurrencyList {
 	
 	public Double getSell_rate() {
 		return sell_rate;
+	}
+
+	public Double getCurrency_holding() {
+		return Currency_holding;
+	}
+
+	public void setCurrency_holding(Double currency_holding) {
+		Currency_holding = currency_holding;
 	}
 	
 }
