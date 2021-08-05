@@ -6,7 +6,8 @@ public class OnlineMoneyExchange {
 	
 	public static void main(String[] args) {
 		
-		ArrayList<Currency>currencyList = new ArrayList<Currency>();
+		ArrayList<CurrencyList>currencyList = new ArrayList<CurrencyList>();
+		ArrayList<CurrencyHoldings>currencyHolding = new ArrayList<CurrencyHoldings>();
 		
 		int option = -1;
 		
